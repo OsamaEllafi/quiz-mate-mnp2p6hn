@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1F2937;
+  --color-secondary: #FF6F61;
+  --color-accent: #F9A825;
+  --color-background: #121212;
+  --color-text: #E0E0E0;
+
+  --font-display: "Fredoka One", cursive;
+  --font-body: "Poppins", sans-serif;
+}
+
+:root {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(90deg, #FF6F61 0%, #F9A825 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
